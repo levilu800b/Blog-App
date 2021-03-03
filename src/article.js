@@ -111,7 +111,7 @@ class Article extends React.Component {
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Link className="nav-link" to="/view" >View</Link>
+      <Link className="nav-link" to="/view">View</Link>
       <Link className="nav-link" to="/add" >Add</Link>
       <Button className="Button" onClick={() => this.props.client.logoutHandler()}>logout</Button>
       
@@ -131,7 +131,7 @@ class Article extends React.Component {
            
           </Container>
         </Route>
-        <Route   exact path="/"  >
+        <Route   exact path="/view"  >
           <Container>
             <h1 className='header'>Blog Articles</h1><br></br>
             <Button  variant="success"   ><Link className="btn btn-success"  to="/add" >New Article</Link></Button>
