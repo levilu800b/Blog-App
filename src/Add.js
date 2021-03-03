@@ -84,7 +84,7 @@ class Add extends React.Component {
             <Form.Control  type="text"   defaultValue={this.props.currentAd?.title} name="title" disabled={this.state.disabled} /><br />
             </Form.Group>
             <Form.Label> Date </Form.Label>
-          <Form.Control  type="text" defaultValue={this.props.currentAd?.Date} name="Date" disabled={this.state.disabled} /><br />
+          <Form.Control  type="date" defaultValue={this.props.currentAd?.Date} name="Date" disabled={this.state.disabled} /><br />
           Description
           <Form.Control   as="textarea" rows={5}type="text" defaultValue={this.props.currentAd?.description} name="description" disabled={this.state.disabled} /><br />
          
